@@ -1,0 +1,30 @@
+<div class="geral">
+
+<div class="titulo">
+    <h1>Pesquise qualquer Cep do Brasil no campo abaixo:</h1>
+</div>
+
+
+<input #cep class="caixadetexto"
+(keyup.enter)="FindCep(cep.value)">
+
+
+<button mat-button
+class="btn"
+(click)="FindCep(cep.value)">Clique aqui para pesquisar</button>
+
+
+<mat-card class="card">
+
+    <mat-card-content><B>CEP: </B> {{Cepvar?.cep}}</mat-card-content>
+    <mat-card-content><B>Logradouro: </B> {{Cepvar?.logradouro}}</mat-card-content>
+    <mat-card-content><B>Complemento: </B> {{Cepvar?.complemento}}</mat-card-content>
+    <mat-card-content><B>Bairro: </B> {{Cepvar?.bairro}}</mat-card-content>
+    <mat-card-content><B>Localidade: </B> {{Cepvar?.localidade}}</mat-card-content>
+    <mat-card-content><B>UF: </B> {{Cepvar?.uf}}</mat-card-content>
+    <mat-card-content><B>DDD: </B> {{Cepvar?.ddd}}</mat-card-content>
+
+</mat-card>
+
+</div>
+
